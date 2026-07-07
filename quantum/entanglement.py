@@ -8,10 +8,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-# ===========================
-# Create Entanglement Circuit
-# ===========================
-
 def create_entanglement():
 
     qc = QuantumCircuit(2, 2)
@@ -28,10 +24,6 @@ def create_entanglement():
     return qc
 
 
-# ===========================
-# Run Simulation
-# ===========================
-
 def run_entanglement():
 
     simulator = AerSimulator()
@@ -44,10 +36,6 @@ def run_entanglement():
 
     return qc, counts
 
-
-# ===========================
-# Save Histogram
-# ===========================
 
 def save_histogram(counts):
 
@@ -63,10 +51,6 @@ def save_histogram(counts):
 
     plt.close(fig)
 
-
-# ===========================
-# Save Circuit Diagram
-# ===========================
 
 def save_circuit(qc):
 
