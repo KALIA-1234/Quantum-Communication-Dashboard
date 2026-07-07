@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quantum Communication Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body class="home-page">
+
+<div class="particles"></div>
+
+<header>
+
+    <h1>⚛ Quantum Communication Dashboard</h1>
+
+    <nav>
+
+        <a href="/">🏠 Home</a>
+
+        <a href="/bell">⚛ Bell States</a>
+
+        <a href="/entanglement">🕸 Entanglement</a>
+
+        <a href="/teleportation">🚀 Teleportation</a>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h2>Explore the World of Quantum Communication</h2>
+
+    <p>
+
+        Learn the fundamentals of Quantum Computing through interactive
+        simulations built with <b>Flask</b>, <b>Qiskit</b>, and
+        <b>Qiskit Aer</b>. Visualize Bell States, Quantum Entanglement,
+        and Quantum Teleportation with real quantum circuits and
+        measurement results.
+
+    </p>
+
+    <button onclick="window.location.href='/bell'">
+
+        🚀 Start Learning
+
+    </button>
+
+</section>
+
+
+<section class="cards">
+
+    <a href="/bell" class="card">
+
+        <h3>⚛ Bell States</h3>
+
+        <p>
+
+            Create a Bell Pair using Hadamard and CNOT gates,
+            then visualize measurement outcomes and histograms.
+
+        </p>
+
+    </a>
+
+
+    <a href="/entanglement" class="card">
+
+        <h3>🕸 Quantum Entanglement</h3>
+
+        <p>
+
+            Understand how two qubits become correlated and
+            always produce matching measurement results.
+
+        </p>
+
+    </a>
+
+
+    <a href="/teleportation" class="card">
+
+        <h3>🚀 Quantum Teleportation</h3>
+
+        <p>
+
+            Transfer the quantum state of one qubit to another
+            using entanglement and classical communication.
+
+        </p>
+
+    </a>
+
+</section>
+
+
+<section style="padding:60px;text-align:center;">
+
+<h2 style="font-size:40px;margin-bottom:25px;">
+
+🌟 Features
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📊 Live Simulation</h3>
+
+<p>
+Run quantum circuits instantly using Qiskit Aer Simulator.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📈 Histogram Visualization</h3>
+
+<p>
+Observe the probability distribution of quantum measurements.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⚛ Quantum Circuit</h3>
+
+<p>
+Visualize the actual circuit used for each experiment.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<div class="footer">
+
+<p>
+
+⚛ Built with Flask • Qiskit • Qiskit Aer
+
+</p>
+
+<p style="margin-top:10px;color:#60a5fa;">
+
+Quantum Communication Dashboard © 2026
+
+</p>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,665 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+header h1{
+    color:#60a5fa;
+    font-size:36px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#cbd5e1;
+    max-width:900px;
+    margin:auto;
+    line-height:1.6;
+}
+
+.hero button{
+    margin-top:40px;
+    border:none;
+    border-radius:40px;
+    padding:18px 45px;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    background:linear-gradient(90deg,#7c3aed,#06b6d4);
+    transition:.3s;
+}
+
+.hero button:hover{
+    transform:scale(1.08);
+}
+
+/* ================= CARDS ================= */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    padding:50px;
+}
+
+.card{
+    width:340px;
+    background:#1e293b;
+    border-radius:18px;
+    padding:30px;
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    font-size:28px;
+    margin-bottom:15px;
+    color:#60a5fa;
+}
+
+.card p{
+    color:#d1d5db;
+    line-height:1.6;
+}
+
+/* ================= PAGE ================= */
+
+.page{
+    padding:60px;
+    text-align:center;
+}
+
+.page h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.page p{
+    font-size:20px;
+    color:#d1d5db;
+    max-width:900px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* ================= BUTTON ================= */
+
+.run-btn{
+    margin-top:35px;
+    border:none;
+    padding:16px 40px;
+    border-radius:35px;
+    cursor:pointer;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    background:linear-gradient(90deg,#7c3aed,#06b6d4);
+}
+
+/* ================= RESULTS ================= */
+
+.results{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:60px;
+}
+
+.box{
+    width:450px;
+    background:#1e293b;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,.45);
+}
+
+.box h2{
+    margin-bottom:20px;
+    color:#60a5fa;
+}
+
+.box img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    text-align:center;
+    color:#9ca3af;
+    padding:40px;
+}
+
+.back{
+    display:inline-block;
+    margin-top:35px;
+    color:#60a5fa;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.back:hover{
+    color:white;
+}
+.box pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-x: auto;
+    font-size: 16px;
+    color: white;
+}
+/* ================= BACKGROUND ANIMATION ================= */
+
+body{
+    background: linear-gradient(-45deg,#0f172a,#111827,#1e1b4b,#0c4a6e);
+    background-size:400% 400%;
+    animation:bgMove 15s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+
+/* ================= GLASS EFFECT ================= */
+
+header,
+.card,
+.box{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+}
+
+
+/* ================= HERO ================= */
+
+.hero h2{
+
+    background:linear-gradient(90deg,#60a5fa,#06b6d4,#a855f7);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+}
+
+
+/* ================= BUTTON ================= */
+
+.run-btn,
+.hero button{
+
+    background:linear-gradient(90deg,#7c3aed,#06b6d4,#3b82f6);
+
+    box-shadow:0 0 20px rgba(59,130,246,.4);
+
+    transition:.35s;
+}
+
+.run-btn:hover,
+.hero button:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+    box-shadow:0 0 35px rgba(6,182,212,.8);
+
+}
+
+
+/* ================= CARDS ================= */
+
+.card:hover{
+
+    transform:translateY(-15px);
+
+    box-shadow:
+    0 0 20px #3b82f6,
+    0 0 45px #8b5cf6;
+
+}
+
+
+/* ================= RESULT BOX ================= */
+
+.box{
+
+    transition:.4s;
+
+}
+
+.box:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:
+    0 0 20px #06b6d4,
+    0 0 40px #8b5cf6;
+
+}
+
+
+/* ================= TABLE ================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+table td,
+table th{
+
+    padding:12px;
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+
+table tr:hover{
+
+    background:rgba(255,255,255,.06);
+
+}
+
+
+/* ================= IMAGES ================= */
+
+.box img{
+
+    transition:.4s;
+
+}
+
+.box img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+
+/* ================= FLOATING GLOW ================= */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:400px;
+
+height:400px;
+
+background:#3b82f6;
+
+filter:blur(180px);
+
+opacity:.25;
+
+top:-120px;
+
+left:-100px;
+
+z-index:-1;
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:350px;
+
+height:350px;
+
+background:#8b5cf6;
+
+filter:blur(180px);
+
+opacity:.25;
+
+bottom:-120px;
+
+right:-80px;
+
+z-index:-1;
+
+}
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page{
+
+background:linear-gradient(-45deg,
+#020617,
+#0f172a,
+#1e3a8a,
+#312e81);
+
+background-size:400% 400%;
+
+animation:bgMove 15s ease infinite;
+
+}
+
+/* =========================
+   BELL STATES
+========================= */
+
+/* =========================
+   BELL STATES QUANTUM THEME
+========================= */
+
+.bell-page{
+
+    background:#020617;
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+
+/* Blue quantum glow */
+
+.bell-page::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:450px;
+
+    height:450px;
+
+    background:#2563eb;
+
+    filter:blur(180px);
+
+    opacity:.25;
+
+    top:-120px;
+
+    left:-100px;
+
+    z-index:-1;
+
+}
+
+
+.bell-page::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:350px;
+
+    height:350px;
+
+    background:#06b6d4;
+
+    filter:blur(180px);
+
+    opacity:.20;
+
+    bottom:-100px;
+
+    right:-80px;
+
+    z-index:-1;
+
+}
+
+/* =========================
+   ENTANGLEMENT
+========================= */
+
+/* =========================
+   ENTANGLEMENT QUANTUM THEME
+========================= */
+
+.entanglement-page{
+
+    background:#485076;
+
+    color:rgb(255, 255, 255);
+
+    min-height:100vh;
+
+}
+
+
+/* Green-Cyan quantum glow */
+
+.entanglement-page::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:450px;
+
+    height:450px;
+
+    background:#14b8a6;
+
+    filter:blur(180px);
+
+    opacity:.22;
+
+    top:-120px;
+
+    left:-100px;
+
+    z-index:-1;
+
+}
+
+
+.entanglement-page::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:350px;
+
+    height:350px;
+
+    background:#22c55e;
+
+    filter:blur(180px);
+
+    opacity:.18;
+
+    bottom:-100px;
+
+    right:-80px;
+
+    z-index:-1;
+
+}
+
+/* =========================
+   TELEPORTATION
+========================= */
+
+/* =========================
+   TELEPORTATION BLACK THEME
+========================= */
+
+.teleportation-page{
+
+    background:black;
+
+    color:white;
+
+    min-height:100vh;
+
+}
+
+
+/* Keep quantum glow effect */
+
+.teleportation-page::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:400px;
+
+    height:400px;
+
+    background:#3b82f6;
+
+    filter:blur(180px);
+
+    opacity:.20;
+
+    top:-120px;
+
+    left:-100px;
+
+    z-index:-1;
+
+}
+
+
+.teleportation-page::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:350px;
+
+    height:350px;
+
+    background:#8b5cf6;
+
+    filter:blur(180px);
+
+    opacity:.20;
+
+    bottom:-120px;
+
+    right:-80px;
+
+    z-index:-1;
+
+}
+/* =========================
+   Floating Particles
+========================= */
+
+.particle{
+
+position:fixed;
+
+bottom:-20px;
+
+background:#60fae5;
+
+border-radius:50%;
+
+pointer-events:none;
+
+animation:floatParticle linear forwards;
+
+box-shadow:0 0 15px #60a5fa;
+
+z-index:-1;
+
+}
+
+@keyframes floatParticle{
+
+0%{
+
+transform:translateY(0) scale(1);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-110vh) scale(.2);
+
+opacity:0;
+
+}
+
+}

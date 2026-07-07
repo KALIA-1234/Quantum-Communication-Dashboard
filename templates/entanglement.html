@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quantum Entanglement</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body class="entanglement-page">
+
+<header>
+
+<h1>⚛ Quantum Communication Dashboard</h1>
+
+<nav>
+
+<a href="/">🏠 Home</a>
+
+<a href="/bell">⚛ Bell States</a>
+
+<a href="/entanglement">🕸 Entanglement</a>
+
+<a href="/teleportation">🚀 Teleportation</a>
+
+</nav>
+
+</header>
+
+
+<section class="page">
+
+<h1>🕸 Quantum Entanglement</h1>
+
+<p>
+
+Quantum entanglement is one of the most fascinating phenomena
+in quantum mechanics. Two qubits become strongly correlated,
+so measuring one instantly determines the state of the other,
+regardless of the physical distance between them.
+
+</p>
+
+<br>
+
+<button class="run-btn"
+onclick="window.location.href='/entanglement'">
+
+🚀 Run Simulation
+
+</button>
+
+</section>
+
+
+<center>
+
+<h3 style="color:#22c55e;font-size:28px;margin-top:15px;">
+
+✔ Simulation Complete (1024 Shots)
+
+</h3>
+
+</center>
+
+
+<section class="results">
+
+<div class="box">
+
+<h2>📊 Measurement Results</h2>
+
+<table>
+
+<tr>
+
+<th>State</th>
+
+<th>Counts</th>
+
+</tr>
+
+{% for state,value in counts.items() %}
+
+<tr>
+
+<td>{{ state }}</td>
+
+<td>{{ value }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+
+<div class="box">
+
+<h2>⚛ Quantum Circuit</h2>
+
+<img src="{{ url_for('static', filename='entanglement_circuit.png') }}"
+alt="Quantum Entanglement Circuit">
+
+</div>
+
+</section>
+
+
+
+<section class="results">
+
+<div class="box">
+
+<h2>📈 Histogram</h2>
+
+<img src="{{ url_for('static', filename='entanglement_histogram.png') }}"
+alt="Entanglement Histogram">
+
+</div>
+
+
+<div class="box">
+
+<h2>📘 About Quantum Entanglement</h2>
+
+<p>
+
+Quantum entanglement creates a strong relationship between
+two qubits.
+
+When one qubit is measured, the outcome of the second qubit
+is immediately correlated.
+
+In this simulation you should mainly observe the states
+
+<b>|00⟩</b> and <b>|11⟩</b>,
+
+which demonstrates perfect quantum correlation.
+
+Entanglement is the foundation of quantum communication,
+quantum teleportation and quantum cryptography.
+
+</p>
+
+</div>
+
+</section>
+
+
+<center>
+
+<a class="back" href="/">
+
+⬅ Back to Dashboard
+
+</a>
+
+</center>
+
+
+<div class="footer">
+
+<h3>🕸 Quantum Entanglement Simulation</h3>
+
+<p>
+
+Built using Flask • Qiskit • Qiskit Aer
+
+</p>
+
+<p>
+
+Quantum Communication Dashboard © 2026
+
+</p>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
