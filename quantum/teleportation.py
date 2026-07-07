@@ -8,10 +8,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-# ===========================
-# Create Teleportation Circuit
-# ===========================
-
 def create_teleportation():
 
     qc = QuantumCircuit(3, 3)
@@ -40,10 +36,6 @@ def create_teleportation():
     return qc
 
 
-# ===========================
-# Run Simulation
-# ===========================
-
 def run_teleportation():
 
     simulator = AerSimulator()
@@ -56,10 +48,6 @@ def run_teleportation():
 
     return qc, counts
 
-
-# ===========================
-# Save Histogram
-# ===========================
 
 def save_histogram(counts):
 
@@ -75,10 +63,6 @@ def save_histogram(counts):
 
     plt.close(fig)
 
-
-# ===========================
-# Save Circuit Diagram
-# ===========================
 
 def save_circuit(qc):
 
